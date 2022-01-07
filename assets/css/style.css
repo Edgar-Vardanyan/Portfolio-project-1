@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  color: #555;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 35px 100px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+header nav li:first-child {
+  margin-left: 0;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+h3,
+h1,
+a,
+p {
+  text-align: center;
+}
+
+.grid {
+  justify-content: center;
+}
+
+.main {
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+}
+
+.main .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.main .background-image:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #414a4f;
+  opacity: 0.75;
+}
+
+.main h1 {
+  font: bold 60px 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.main h3 {
+  font: normal 28px 'Open Sans', sans-serif;
+  margin-bottom: 40px;
+}
+
+.main a.btn {
+  padding: 20px 46px;
+}
+
+.btn:hover {
+  background-color: #0a87ee;
+}
+
+a.btn {
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #2196f3;
+  font-weight: 800;
+}
+
+section h3.title {
+  color: #414a4f;
+  text-transform: capitalize;
+  font: bold 32px 'Open Sans', sans-serif;
+  margin-bottom: 35px;
+}
+
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+hr {
+  width: 150px;
+  height: 2px;
+  background-color: #2196f3;
+  border: 0;
+  margin-bottom: 80px;
+}
+
+ul.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .grid li {
+  padding: 20px;
+  height: 350px;
+  border-radius: 3px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.about .grid li.small {
+  flex-basis: 40%;
+}
+
+.about .grid li.large {
+  flex-basis: 60%;
+}
+
+.services .grid li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.services .grid li i {
+  font-size: 50px;
+  color: #2196f3;
+  margin-bottom: 25px;
+}
+
+.services .grid li h4 {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.services .grid li p {
+  margin: 0;
+}
+
+.reviews .quote {
+  text-align: center;
+  width: 80%;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.reviews .author {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.reviews .author:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  background-color: #f7f7f7;
+}
+
+.contact form {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 80%;
+}
+
+.contact form input {
+  padding: 15px;
+  flex: 1;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.contact form .btn {
+  padding: 18px 42px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #414a4f;
+  padding: 60px 0;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li {
+  margin: 0 8px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .services .grid li {
+    flex-basis: 70%;
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services .grid li {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact form .input {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .grid li.small {
+    flex-basis: 100%;
+    min-width: 325px;
+  }
+
+  .about .grid li.large {
+    flex-basis: 100%;
+    min-width: 325px;
+  }
+}
